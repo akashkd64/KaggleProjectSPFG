@@ -1,13 +1,15 @@
 # Predicting Student Performance from Gameplay Data
 
+Dataset From: https://www.kaggle.com/competitions/predict-student-performance-from-game-play/data
 This project uses the Kaggle “Predict Student Performance from Game Play” dataset to build a machine learning model that predicts whether a student will answer a question correctly based on gameplay interaction data. The dataset contains student gameplay events, including clicks, elapsed time, level progress, and session information. Since the original dataset is event-level data, the information was cleaned and transformed into session-level features that could be used for machine learning.
 
 ## Project Overview
 
-The main goal of this project is to predict student performance from gameplay behavior. In this project, student performance is treated as a binary classification problem, where the model predicts whether an answer is correct or incorrect. A correct answer is represented as ⁠ 1 ⁠, while an incorrect answer is represented as ⁠ 0 ⁠.
 
-The raw gameplay dataset contains a large amount of detailed interaction data. Each row represents a specific gameplay event, but machine learning models work better when the data is summarized into useful features. Because of this, the gameplay data was grouped by ⁠ session_id ⁠ and ⁠ level_group ⁠. Features such as average elapsed time, maximum level reached, and total number of interactions were created to represent each student’s gameplay behavior during a specific part of the game.
+The objective of this project is to predict whether a student answers a question correctly based on their gameplay behavior. The dataset consists of event-level sets capturing user interactions such as clicks, elapsed time, and level progression.
+Since the raw data is highly detailed and event-based, it is not directly suitable for machine learning models. Therefore, the data is aggregated by session_id to create meaningful session-level features such as average elapsed time, maximum level reached, and total number of interactions.
 
+The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I plan to use the  Random Forest classifier to model the relationship between gameplay behavior and student performance.
 ## Data
 
 The dataset used in this project comes from the Kaggle “Predict Student Performance from Game Play” competition. It contains gameplay event data and labels showing whether students answered questions correctly or incorrectly. The main gameplay file contains millions of rows, so the project focuses on cleaning, filtering, and transforming the data into a smaller and more useful format for modeling.
@@ -48,10 +50,6 @@ The Random Forest model was trained using the prepared session-level gameplay fe
 The model was evaluated using accuracy, classification report, and ROC AUC score. Accuracy measures how often the model predicted the correct class. The classification report gives more detailed information about precision, recall, and F1-score. The ROC AUC score shows how well the model separates correct and incorrect answers across different probability thresholds.
 
 The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.64. . The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
-
-The ROC curve below shows how well the Random Forest model separates correct and incorrect answers. A curve farther away from the diagonal line indicates better model performance.
-
-![ROC Curve for Random Forest Model](figures/roc_curve_random_forest.png)
 
 ## Conclusion
 This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
