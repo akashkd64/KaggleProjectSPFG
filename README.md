@@ -59,4 +59,4 @@ This project used gameplay data to predict whether students would answer correct
 
 ## Future Work
 
-In the future, I would love to improve this project by creating stronger features, such as question-specific behavior and spending more time over each questions .I would also love to try different models with other available datasets.
+In the future, I would love to improve this project by creating stronger features, such as question-specific modeling  and spending more time over each questions .I would also love to try different models with other available datasets.
