@@ -6,11 +6,10 @@ This project uses the Kaggle “Predict Student Performance from Game Play” da
 
 ## Project Overview
 
-
 The objective of this project is to predict whether a student answers a question correctly based on their gameplay behavior. The dataset consists of event-level sets capturing user interactions such as clicks, elapsed time, and level progression.
 Since the raw data is highly detailed and event-based, it is not directly suitable for machine learning models. Therefore, the data is aggregated by session_id to create meaningful session-level features such as average elapsed time, maximum level reached, and total number of interactions.
 
-The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I plan to use the  Random Forest classifier to model the relationship between gameplay behavior and student performance.
+The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I used the  Random Forest classifier to model the relationship between gameplay behavior and student performance. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64.
 
 # Summary of the work done
 ## Data
