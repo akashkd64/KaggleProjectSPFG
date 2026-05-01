@@ -8,16 +8,35 @@ The goal of this project is to build a machine learning model that predicts stud
 
 ## What This Project Includes
 
-- Data loading and preview
-- Data visualization of correct and incorrect answers
-- Question-wise correct rate analysis
-- Feature engineering using session-level and level-group gameplay behavior
-- Random Forest classification model
-- Model evaluation using accuracy, classification report, and ROC AUC
-- Final submission file generation
 
-## Model Used
 
+## Data Visualization
+
+This project includes exploratory data visualizations to understand patterns in student performance before training the machine learning model.
+
+### Correct and Incorrect Answer Distribution
+
+This chart shows the overall distribution of correct and incorrect answers in the dataset.
+
+![Correct and Incorrect Answer Distribution](figures/correct_incorrect_distribution.png)
+
+### Correct and Incorrect Answers by Question
+
+This visualization compares the number of correct and incorrect responses for each question.
+
+![Correct and Incorrect by Question](figures/correct_incorrect_by_question.png)
+
+### Average Correct Rate by Question
+
+This chart shows the average correct rate for each question, helping identify which questions students answered correctly more often.
+
+![Average Correct Rate by Question](figures/average_correct_rate_by_question.png)
+
+### ROC Curve for Random Forest Model
+
+The ROC curve shows how well the Random Forest model separates correct and incorrect answers. A higher AUC value means better model performance.
+
+![ROC Curve for Random Forest Model](figures/roc_curve_random_forest.png)
 A Random Forest classifier was used for this project.
 
 ## Files in This Repository
