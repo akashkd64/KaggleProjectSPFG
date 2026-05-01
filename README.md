@@ -3,7 +3,7 @@
 Dataset From: https://www.kaggle.com/competitions/predict-student-performance-from-game-play/data
 This project uses the Kaggle “Predict Student Performance from Game Play” dataset to build a machine learning model that predicts whether a student will answer a question correctly based on gameplay interaction data. The dataset contains student gameplay events, including clicks, elapsed time, level progress, and session information. Since the original dataset is event-level data, the information was cleaned and transformed into session-level features that could be used for machine learning.
 
-# Summary of the work done
+
 ## Project Overview
 
 
@@ -11,6 +11,8 @@ The objective of this project is to predict whether a student answers a question
 Since the raw data is highly detailed and event-based, it is not directly suitable for machine learning models. Therefore, the data is aggregated by session_id to create meaningful session-level features such as average elapsed time, maximum level reached, and total number of interactions.
 
 The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I plan to use the  Random Forest classifier to model the relationship between gameplay behavior and student performance.
+
+# Summary of the work done
 ## Data
 Data Format
 The dataset consists of tabular gameplay event data stored in CSV format, where each row represents a user interaction.
