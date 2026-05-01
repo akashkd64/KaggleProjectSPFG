@@ -11,10 +11,11 @@ Since the raw data is highly detailed and event-based, it is not directly suitab
 
 The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I plan to use the  Random Forest classifier to model the relationship between gameplay behavior and student performance.
 ## Data
+Data Format
+The dataset consists of tabular gameplay event data stored in CSV format, where each row represents a user interaction.
+It contains gameplay event data and labels showing whether students answered questions correctly or incorrectly. The main gameplay file contains millions of rows, so the project focuses on cleaning, filtering, and transforming the data into a smaller and more useful format for modeling.
 
-The dataset used in this project comes from the Kaggle “Predict Student Performance from Game Play” competition. It contains gameplay event data and labels showing whether students answered questions correctly or incorrectly. The main gameplay file contains millions of rows, so the project focuses on cleaning, filtering, and transforming the data into a smaller and more useful format for modeling.
-
-The target variable is the ⁠ correct ⁠ column from the labels dataset. This column tells whether the student answered a question correctly. The input features were created from gameplay behavior, including time-based information, level progress, and interaction counts. After preprocessing, the dataset was prepared so that each row represented a student session and level group, making it easier to train and evaluate the machine learning model.
+The target variable is the ⁠ correct ⁠ column from the labels dataset. This column tells whether the student answered a question correctly. The input features were created from gameplay behavior, including time based information, level progress, and interaction counts. After preprocessing, the dataset I prepared the dataset so that each row represented a student session and level group, making it easier to train and evaluate the machine learning model.
 
 ## Data Visualization
 
@@ -41,7 +42,7 @@ After feature engineering, the target labels were connected to the prepared game
 
 ## Model Used
 
-A Random Forest classifier was used for this project. Random Forest is a machine learning model that builds many decision trees and combines their results to make a final prediction. This model was selected because it works well for classification problems and can handle many different types of features.
+A Random Forest classifier was used for this project. This model was selected because it works well for classification problems and can handle many different types of features.
 
 The Random Forest model was trained using the prepared session-level gameplay features. The model learned patterns between student gameplay behavior and whether the student answered correctly. After training, the model was tested using the validation dataset.
 
