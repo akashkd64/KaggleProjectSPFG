@@ -24,7 +24,7 @@ I used  it to understand the student performance patterns before training the ma
 
 ![Correct and Incorrect Answer Distribution](figures/correct_incorrect_distribution.png)
 
-The second visualization compares correct and incorrect answers for each question. This graph is useful because it shows that some questions have higher correct rates than others. Questions with more correct answers may be easier for students, while questions with more incorrect answers may be more difficult.
+I used it to compares correct and incorrect answers for each question. This graph is useful because it shows that some questions have higher correct rates than others. Questions with more correct answers may be easier for students, while questions with more incorrect answers may be more difficult.
 
 ![Correct and Incorrect Answers by Question](figures/correct_incorrect_by_question.png)
 The graph shows that some questions have higher correct rates than others. This means that certain questions may be easier, while others may be more difficult for students. A higher average correct rate means students answered that question correctly more often, while a lower average correct rate suggests that the question was more challenging.
