@@ -15,8 +15,11 @@ The problem is formulated as a binary classification task, where the goal is to 
 Dataset From: https://www.kaggle.com/competitions/predict-student-performance-from-game-play/data
 
 Train shape: (26296946, 20)
+
 Labels shape: (424116, 2)
+
 Test shape: (3728, 21)
+
 Sample submission shape: (54, 3)
 
 The dataset consists of tabular gameplay event data stored in CSV format, where each row represents a user interaction.
