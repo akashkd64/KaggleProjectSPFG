@@ -16,15 +16,14 @@ The target variable is the ⁠ correct ⁠ column from the labels dataset. T
 
 ## Data Visualization
 
-Data visualization was used to understand the student performance patterns before training the machine learning model. The first visualization shows the overall distribution of correct and incorrect answers in the dataset. This helped identify whether the dataset was balanced or if one class appeared more often than the other.
+I used  it to understand the student performance patterns before training the machine learning model. The first visualization shows the overall distribution of correct and incorrect answers in the dataset. This helped identify whether the dataset was balanced or if one class appeared more often than the other.
 
 ![Correct and Incorrect Answer Distribution](figures/correct_incorrect_distribution.png)
 
 The second visualization compares correct and incorrect answers for each question. This graph is useful because it shows that some questions have higher correct rates than others. Questions with more correct answers may be easier for students, while questions with more incorrect answers may be more difficult.
 
 ![Correct and Incorrect Answers by Question](figures/correct_incorrect_by_question.png)
-
-The third visualization shows the average correct rate for each question. This gives a clearer view of student performance across different questions. A higher average correct rate means students answered that question correctly more often, while a lower average correct rate suggests that the question was more challenging.
+The graph shows that some questions have higher correct rates than others. This means that certain questions may be easier, while others may be more difficult for students. A higher average correct rate means students answered that question correctly more often, while a lower average correct rate suggests that the question was more challenging.
 
 ![Average Correct Rate by Question](figures/average_correct_rate_by_question.png)
 
@@ -48,11 +47,14 @@ The Random Forest model was trained using the prepared session-level gameplay fe
 
 The model was evaluated using accuracy, classification report, and ROC AUC score. Accuracy measures how often the model predicted the correct class. The classification report gives more detailed information about precision, recall, and F1-score. The ROC AUC score shows how well the model separates correct and incorrect answers across different probability thresholds.
 
-The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.64. This means the model performed better than random guessing, but there is still room for improvement. The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
+The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.64. . The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
 
 The ROC curve below shows how well the Random Forest model separates correct and incorrect answers. A curve farther away from the diagonal line indicates better model performance.
 
 ![ROC Curve for Random Forest Model](figures/roc_curve_random_forest.png)
+
+## Conclusion
+This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
 
 
 ## Future Work
