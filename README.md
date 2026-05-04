@@ -65,6 +65,10 @@ The Random Forest model achieved about 62% validation accuracy and a ROC AUC sco
 
 ![ROC Curve](figures/roc_curve.png)
 
+## Condusion Matrix
+To better understand the model's performance beyond simple accuracy, I generated a confusion matrix at the optimized probability threshold of 0.40.
+![Confusion Matrix](confusion_matrix.png)
+
 ## Conclusion
 This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.62. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
 
