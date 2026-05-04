@@ -8,7 +8,7 @@ This project uses the Kaggle “Predict Student Performance from Game Play” da
 The objective of this project is to predict whether a student answers a question correctly based on their gameplay behavior. The dataset consists of event-level sets capturing user interactions such as clicks, elapsed time, and level progression.
 Since the raw data is highly detailed and event-based, it is not directly suitable for machine learning models. Therefore, the data is aggregated by session_id to create meaningful session-level features such as average elapsed time, maximum level reached, and total number of interactions.
 
-The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I used the  Random Forest classifier to model the relationship between gameplay behavior and student performance. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64.
+The problem is formulated as a binary classification task, where the goal is to predict whether a student’s answer is correct (1) or incorrect (0). I used the  Random Forest classifier to model the relationship between gameplay behavior and student performance. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.62.
 
 # Summary of the work done
 ## Data
@@ -61,12 +61,12 @@ The Random Forest model was trained using the prepared session-level gameplay fe
 
 The model was evaluated using accuracy, classification report, and ROC AUC score. Accuracy measures how often the model predicted the correct class. The classification report gives more detailed information about precision, recall, and F1-score. The ROC AUC score shows how well the model separates correct and incorrect answers across different probability thresholds.
 
-The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.64. . The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
+The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.62. . The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
 
 ![ROC Curve](figures/roc_curve.png)
 
 ## Conclusion
-This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
+This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.62. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
 
 
 ## Future Work
