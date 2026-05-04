@@ -55,13 +55,15 @@ After feature engineering, the target labels were connected to the prepared game
 A Random Forest classifier was used for this project. This model was selected because it works well for classification problems and can handle many different types of features.
 
 The Random Forest model was trained using the prepared session-level gameplay features. The model learned patterns between student gameplay behavior and whether the student answered correctly. After training, the model was tested using the validation dataset.
-![ROC Curve](images/roc_curve.png)
+
 
 ## Model Evaluation
 
 The model was evaluated using accuracy, classification report, and ROC AUC score. Accuracy measures how often the model predicted the correct class. The classification report gives more detailed information about precision, recall, and F1-score. The ROC AUC score shows how well the model separates correct and incorrect answers across different probability thresholds.
 
 The Random Forest model achieved about 62% validation accuracy and a ROC AUC score of about 0.64. . The result suggests that gameplay behavior contains useful information for predicting student performance, but stronger features and additional modeling strategies could improve the prediction quality.
+
+![ROC Curve](figures/roc_curve.png)
 
 ## Conclusion
 This project used gameplay data to predict whether students would answer correctly. The Random Forest model achieved decent performance with about 62% validation accuracy and a ROC AUC score of about 0.64. This shows that gameplay behavior can help predict student performance. With improvements model can work more accurately.
