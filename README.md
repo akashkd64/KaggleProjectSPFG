@@ -46,7 +46,7 @@ These visualizations were important because they helped explain patterns in the 
 
 Before training the model, the raw gameplay data had to be prepared. Since the original dataset was based on individual gameplay events, it was not directly ready for machine learning. The data was grouped by ⁠ session_id ⁠ and ⁠ level_group ⁠ so that each row represented a meaningful gameplay segment for a student.
 
-Several session-level features were created from the event data. These features included average elapsed time, maximum level reached, and total number of gameplay interactions. These engineered features helped summarize student behavior in a way that the machine learning model could understand.
+I tried creating different features from the event data. These features included average elapsed time, maximum level reached, and total number of gameplay interactions. These engineered features helped summarize student behavior in a way that the machine learning model could understand.
 
 After feature engineering, the target labels were connected to the prepared gameplay features. The final dataset was then split into training and validation sets. The training set was used to teach the model, while the validation set was used to evaluate how well the model performed on data it had not seen during training.
 
@@ -55,6 +55,7 @@ After feature engineering, the target labels were connected to the prepared game
 A Random Forest classifier was used for this project. This model was selected because it works well for classification problems and can handle many different types of features.
 
 The Random Forest model was trained using the prepared session-level gameplay features. The model learned patterns between student gameplay behavior and whether the student answered correctly. After training, the model was tested using the validation dataset.
+![ROC Curve](images/roc_curve.png)]
 
 ## Model Evaluation
 
