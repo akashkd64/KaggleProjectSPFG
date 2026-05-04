@@ -55,7 +55,7 @@ After feature engineering, the target labels were connected to the prepared game
 A Random Forest classifier was used for this project. This model was selected because it works well for classification problems and can handle many different types of features.
 
 The Random Forest model was trained using the prepared session-level gameplay features. The model learned patterns between student gameplay behavior and whether the student answered correctly. After training, the model was tested using the validation dataset.
-![ROC Curve](images/roc_curve.png)]
+![ROC Curve](images/roc_curve.png)
 
 ## Model Evaluation
 
