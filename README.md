@@ -65,7 +65,7 @@ The Random Forest model achieved about 62% validation accuracy and a ROC AUC sco
 
 ![ROC Curve](figures/roc_curve.png)
 
-## Condusion Matrix
+## Confusion Matrix
 To better understand the model's performance beyond simple accuracy, I generated a confusion matrix at the optimized probability threshold of 0.40.
 
 ![Confusion Matrix](figures/confusion_matrix.png)
